@@ -1,13 +1,13 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: Derek Laister
+- How many hours did it take you to complete this assignment? 6+ (not able to get git to work as intended)
+- Did you collaborate with any other students/TAs/Professors? No
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
+  - Youtube
+  - Stack Overflow
+- (Optional) What was your favorite part of the assignment? Working with the project files (these files)
+- (Optional) How would you improve the assignment? An estimated time frame for completion of each task would be nice for those who work FT in addition to schooling, as to appropriately determine needed time for completion 
 
 # Implementation Logistics
 
