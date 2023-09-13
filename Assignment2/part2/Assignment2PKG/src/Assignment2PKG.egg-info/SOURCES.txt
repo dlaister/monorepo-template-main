@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/jsonapi.py
+src/Assignment2PKG.egg-info/PKG-INFO
+src/Assignment2PKG.egg-info/SOURCES.txt
+src/Assignment2PKG.egg-info/dependency_links.txt
+src/Assignment2PKG.egg-info/requires.txt
+src/Assignment2PKG.egg-info/top_level.txt

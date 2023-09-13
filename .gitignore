@@ -1,3 +1,5 @@
 .idea*
 .DS_Store
 .venv*
+*.rtf
+/monorepo-tegit check-ignore -v **/*mplate-main/TestFileToIgnore.rtf
