@@ -1,13 +1,15 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: Derek Laister
+- How many hours did it take you to complete this assignment? Too many...
+- Did you collaborate with any other students/TAs/Professors? No
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
+  - freeCodeCamp
+  - youtube
+  - stack overflow
+  - python unittest documentation
+- (Optional) What was your favorite part of the assignment? Creating a package (though not successful) to share project contents
+- (Optional) How would you improve the assignment? A walk thorough with more detail on .gitignore explanation would be nice, and it would aslo be nice to have a more detailed walkthrough of the creation of the deliverable package since there are so many steps and it's not 100% clear on the overall work needed, where it goes, and how to submit. Lots of Documentation is great until you get lost in it because it is so much. Boiling down to the necessities would be a better use of time and then exploring further as needed. 
 
 # Implementation Logistics
 
