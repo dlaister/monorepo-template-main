@@ -1,6 +1,5 @@
 import random
 
-
 class MObject:
     def __init__(self):
         pass
