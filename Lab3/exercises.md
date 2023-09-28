@@ -8,7 +8,7 @@ Update your answers to the following questions, make sure to commit this file an
 1. Is MObject an abstract or a concrete class? Explain why:
 	- *It appears that MObject is a CONCRETE class as it does not use the abc module and because it contains no implementable methods beyond itself. Furthermore, by default, Python does not provide a abstract classes per GeeksforGeeks. Python does however, come with a module that defines a base abstract class.*
 1. The 'Image' class has commented code for a `__del__` method. What does this commented-out method do?
-	- *__del__ is a destructor, and destroys the instance of. In this case, Image. In layman's terms, this destroys the object when it si no longer needed freeing up resource memory.*
+	- *__del__ is a destructor, and destroys the instance of. In this case, Image. In layman's terms, this destroys the object when it is no longer needed freeing up resource memory.*
 1. What class does Texture inherit from?
 	- *Texture inherits from the Image class as shown in the signature: class Texture(Image):*
 1. What methods and attributes does the Texture class inherit from 'Image'? 
@@ -41,5 +41,5 @@ Hint: Look at Lecture 3 slides for an example of creating a Singleton in Python
 
 1. Are singleton's in Python thread safe? Why or why not?
 
-*edit the code directly*  
+- *It was mentioned in class that it is explicitly NOT safe, and I would say no (for the most part) that singletons in Python are NOT (usually) thread safe. However, it comes down to the implementation. A point made in class was that there could be a race condition when multiple instances clash. Upon exploring Python documentation, there are methods for thread protection (found here:https://docs.python.org/3/library/asyncio-sync.html)*  
   

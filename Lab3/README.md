@@ -26,7 +26,7 @@ Provided below are a list of curated resources to help you complete the tasks be
 	1. Singleton Pattern deep dive
 		- [Design Patterns - Singleton Pattern](https://python-patterns.guide/gang-of-four/singleton/)
 	
-# Task 1 - Inhertiance vs Composition
+# Task 1 - Inheritance vs Composition
 
 ## Object-Oriented Programming
 
