@@ -6,31 +6,31 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *New Program Window.*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User.*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *To create a new window and drawable canvas 600x400 (600 pixels wide, 400 pixels high).*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *The program must be opened.*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *(1) Application must be opened. (2) Create a new widow if option is available.*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: *User will open the application from the applications list or dock. Application will open a new window and canvas in desired size.*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *New window already opened, user will be prompted to either continue or create a new window.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *High-priority.*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *First release.*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: *The primary actor is the system which is responsible for allocating resources to create a new instance of the application with the desired specifications.*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *The secondary actor (user) communicates through I/O devices. This includes the keyboard and the mouse. The system is responsible for maintaining focus of the window when the user clicks, and should respond within 1 second of any keyboard event. The user is responsible for all other input.*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *The secondary actor may interact through I/O devices such as a mouse, keyboard, touchpad, or stylus.*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *Window may need a default behavior, such as it opens in white. The user can be prompted in a future relase as what to do with the background on open. This may be a user set setting, or can be set per instance.*
 
 <hr>
 
