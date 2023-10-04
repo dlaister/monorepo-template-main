@@ -62,7 +62,6 @@ class Update_item(object):
             appreciation = self.SINGLE_RATE
         else:
             appreciation = self.DOUBLE_RATE
-
         item.quality = min((item.quality + appreciation), self.MAX_QUALITY)
         item.sell_in += self.PAST_DATE
 
@@ -78,18 +77,19 @@ class Update_item(object):
         def get_quality(item, appreciation):
             item.quality = min(item.quality + appreciation, self.MAX_QUALITY)
 
-            if item.sell_in > 10:
-                appreciation = self.SINGLE_RATE
-                get_quality(item, appreciation)
-            elif item.sell_in > 5:
-                appreciation = self.DOUBLE_RATE
-                get_quality(item, appreciation)
-            elif item.sell_in > 0:
-                appreciation = self.TRIPLE_RATE
-                get_quality(item, appreciation)
-            else:
-                item.quality = 0
-                item.sell_in += self.PAST_DATE
+        if item.sell_in > 10:
+            appreciation = self.SINGLE_RATE
+            get_quality(item, appreciation)
+        elif item.sell_in > 5:
+            appreciation = self.DOUBLE_RATE
+            get_quality(item, appreciation)
+        elif item.sell_in > 0:
+            appreciation = self.TRIPLE_RATE
+            get_quality(item, appreciation)
+        else:
+            item.quality = 0
+
+        item.sell_in += self.PAST_DATE
 
     """
     Function Conjured Mana Cake decreases in quality TWICE as fast as a NORMAL item.

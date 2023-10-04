@@ -4,4 +4,5 @@
 *.rtf
 **/.idea
 **/.DS_Store
+**/__pycache__
 /monorepo-tegit check-ignore -v **/*mplate-main/TestFileToIgnore.rtf
