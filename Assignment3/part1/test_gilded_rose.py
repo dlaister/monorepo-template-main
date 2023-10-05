@@ -5,7 +5,7 @@ from gilded_rose import Item, GildedRose
 
 
 class GildedRoseTest(unittest.TestCase):
-    #--------------------DEFAULT TEST--------------------#
+    #--------------------DEFAULT "FAILING" TEST--------------------#
     def test_foo(self):
         items = [Item("foo", 0, 0)]
         gilded_rose = GildedRose(items)
@@ -25,20 +25,18 @@ class GildedRoseTest(unittest.TestCase):
     """
     def test_aged_brie(self):
         # Item instance
-        item = Item("Aged Brie", 30, 30)
+        item = Item("Aged Brie", 50, 2)
         gilded_rose = GildedRose([item]) # create a GildRose list of items
 
         # First day
         gilded_rose.update_quality()
-        self.assertEqual(item.sell_in,29) # second = sell_in -1
-        self.assertEqual(item.quality,31) # second = quality +1
+        self.assertEqual(item.sell_in,49) # second = sell_in -1
+        self.assertEqual(item.quality,3) # second = quality +1
 
-        #TODO
         # Sell-by-date expired (day -1)
-        # GildedRose.update_quality(gilded_rose, item.sell_in + 1)
-        # self.assertEqual(item.sell_in, -1)
+        GildedRoseTest.update_quality(gilded_rose, item.sell_in + 1) # updates list to past date
+        self.assertEqual(item.sell_in, -1) # past date
 
-        # 2x quality INCREASE
 
     """
     Backstage passes to a TAFKAL80ETC concert
@@ -64,13 +62,18 @@ class GildedRoseTest(unittest.TestCase):
     """
     def test_conjured_mana_cake(self):
         # Item instance
-        item = Item("Conjured Mana Cake", 5, 0)
+        item = Item("Conjured Mana Cake", 30, 30)
         gilded_rose = GildedRose([item]) # create a GildRose list of items
 
-        #TODO
         # First day
+        gilded_rose.update_quality()
+        self.assertEqual(item.sell_in, 29) # second = sell_in -1
+        self.assertEqual(item.quality, 28) # second = quality -2
+        GildedRoseTest.update_quality(gilded_rose, item.sell_in + 1) # updates list to past date
+
         # Sell-by-date expired (day -1)
-        # 4x quality DECREASE
+        self.assertEqual(item.sell_in, -1) # past date
+        self.assertEqual(item.quality, 0) # quality SHOULD be 0
 
     """
     Sulfuras, Hand of Ragnaros
