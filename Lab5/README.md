@@ -1,5 +1,5 @@
 # Implementation Logistics
-
+ 
 - You may use whatever operating system, IDE, or tools for completing this assignment.
 - In the future there may be restrictions, so please review here.
 
