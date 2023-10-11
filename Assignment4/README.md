@@ -1,13 +1,13 @@
 # TODO Please edit the following information in your assignment
 
 - Name: Derek Laister
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- How many hours did it take you to complete this assignment? Less than an hour. 
+- Did you collaborate with any other students/TAs/Professors? No.
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
+  - [Acceptance Criteria for User Stories: Purposes, Formats, Examples, and Best Practices](https://www.altexsoft.com/blog/business/acceptance-criteria-purposes-formats-and-best-practices/)
+  - ChatGPT
+- (Optional) What was your favorite part of the assignment? Thinking about the edge cases for an action and all of its possibilities. 
+- (Optional) How would you improve the assignment? N/A, this was a fairly straightforward assignment.
 
 # Implementation Logistics
 
