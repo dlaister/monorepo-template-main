@@ -1,6 +1,7 @@
 .idea*
 .DS_Store
 .venv*
+venv/
 *.rtf
 **/.idea
 **/.DS_Store
