@@ -22,24 +22,25 @@ def first_apiV3(title: str):
 
 # GET ReST API with path parameters AND query parameters
 @app.get("/books/{path_param}/")
-def first_apiV7(parameters: str, query: str):
-    return {"Message": parameters, "Message": query}
+def first_apiV7(path_param: str, query: str):
+    print(path_param, query)
+    return {"Message": path_param, "Message": query}
 
 # POST ReST API
 @app.post("/books/create_book")
 def first_apiV4(new_book=Body()):
-    print(new_book)
-    return {"Message": "Book " + new_book + " has been created"}
+    # print(new_book)
+    return {"Message": new_book}
 
 # PUT ReST API
 @app.put("/books/update_book")
 def first_apiV5(update_book=Body()):
-    print(update_book)
-    return {"Message": "Books has been updated with: " + update_book}
+    # print(update_book)
+    return {"Message": update_book}
 
 # DELETE ReST API
 #TODO - check this is right?
-@app.delete("books/delete_book")
+@app.delete("/books/delete_book")
 def first_apiV6(delete_book: str):
-    print(delete_book)
-    return {"Message": delete_book + " has been deleted"}
+    # print(delete_book)
+    return {"Message": delete_book}
