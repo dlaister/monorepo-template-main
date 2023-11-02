@@ -2,6 +2,8 @@
 .DS_Store
 .venv*
 .coverage*
+build/
+dist/
 venv/
 *.rtf
 **/.idea
